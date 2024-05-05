@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    transition: 0.65s ease-in-out;
+    align-items: center;
+}
+nav.scrolled{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 9px;
+}
+nav img{
+    width: 80px;
+}
+.nav-logo{
+    position: fixed;
+    float: left;
+    padding: 2.5px 5% 5%;
+    align-items: center;
+}
+.nav-btns{
+    flex: 1;
+    text-align: right;
+    padding: 0.7% 5%;
+}
+.nav-btns ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 18px 12px;
+}
+.nav-btns ul li a.arcivil{
+    position: fixed;
+    left: 9%;
+    top: 3%;
+    color: #f77f00;
+    text-decoration: none;
+    font-size: 20.5px;
+    font-weight: bold;
+}
+.nav-btns ul li a.anim{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16.5px;
+}
+.nav-btns ul li a.anim::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f77f00;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-btns ul li a.anim:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+@media(max-width: 700px){
+    nav{
+        position: fixed;
+    }
+    .text-box h1{
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .main-btn{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .nav-btns ul li{
+        display: block;
+    }
+    .nav-btns{
+        position: fixed;
+        background: #f77f00;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -260px;
+        text-align: left;
+        align-content: right;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 23px;
+        cursor: pointer;
+    }
+    .nav-btns ul{
+        padding: 30px;
+    }
+    .nav-btns ul li a.arcivil{
+        padding-right: 20px;
+    }
+    .nav-btns ul li a.arcivil{
+        opacity: 0;
+    }
+    nav div.open{
+        position: absolute;
+        top: 20%;
+        right: 3%;
+    }
+    nav div.close{
+        position: absolute;
+        top: 2%;
+    }
+}
+/*--------Career-----------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/About-Bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.sub-header h1{
+    font-size: 50px;
+    margin-top: 50px;
+}
+/*-------Service-------*/
+.Service{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
+}
+.Service h1{
+    color: #f77f00;
+    font-size: 48px;
+    font-weight: 600;
+}
+.Service p{
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.service-list{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+/*---------Service Numbers-----------*/
+.first-service{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.first-service img{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 98.6%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#f77f00);
+    opacity: 0;
+    transition: 1s;
+}
+.first-service:hover .overlay{
+    opacity: 1;
+}
+.overlay2{
+    width: 100%;
+    height: 98.6%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#f77f00);
+    opacity: 0;
+    transition: 1s;
+}
+.first-service:hover .overlay2{
+    opacity: 1;
+}
+.service-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    top: 52%;
+    opacity: 0;
+    right: 10%;
+    align-content: center;
+    transition: 1s;
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.service-desc h3{
+    color: #fff;
+    font-size: 20px;
+}
+.service-desc p{
+    color: #fff;
+    font-size: 13px;
+}
+.first-service:hover .service-desc{
+    bottom: 40%;
+    opacity: 1;
+}
+@media screen and (max-width: 770px){
+    .first-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .service-desc h3{
+        font-size: 10px;
+    }
+    .service-desc p{
+        line-height: 1.2;
+        font-size: 10px;
+    }
+    hr{
+        margin: 5px;
+    }
+    .first-service:hover .service-desc{
+        bottom: 25% !important;
+    }
+}
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f77f00;
+    height: auto;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+}
+.background{
+    width: 100%;
+    background-color: #efefef;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: #000;
+    
+}
+.footer-bottom{
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+@media screen and (max-width: 770px){
+    .footer-content p{
+        font-size: 12px;
+        text-align: center;
+        max-width: 400px;
+    }
+}

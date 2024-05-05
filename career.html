@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcivil</title>
+    <link rel="stylesheet" href="career.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-logo">
+            <a><img src="images/Activity-5-Adriel-L__2_-removebg-preview.png" alt="Arcivil Logo"></a>
+            </div>
+            <div class="nav-btns" id="navButtons">
+               <div class="close"><i class="fa fa-times" onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a class="arcivil">Arcivil</a></li>
+                    <li><a href="index.html" class="anim">Home</a></li>
+                    <li><a href="about.html" class="anim">About</a></li>
+                    <li><a href="career.html" class="anim">Careers</a></li>
+                    <li><a href="services.html" class="anim">Services</a></li>
+                    <li><a href="contact.html" class="anim">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="open"><i class="fa fa-bars" onclick="showMenu()"></i></div>
+        </nav>
+        <div class="text-box">
+            <h1>Careers</h1>
+        </div>
+    </section>
+
+<section id="career-bg">
+<section class="career">
+    <h1>Careers</h1>
+    <p>Arcivil provides rewarding career opportunities</p>
+
+    <div id="container">
+        <div class="career-col">
+            <h3>Students/Interns</h3>
+            <p>Arcivil welcomes students through mentorship programs and internships which offer them hands-on experience with engineering projects that promote their advancement in this field. The environment of acceptance created in this organization is such that it makes young people feel as though they are important enough so as not only participate but also take part in firm groundbreaking innovations.</p>
+            </div>
+            <div class="career-col">
+            <h3>Professionals</h3>
+            <p>Arcivil is embracing professionals who want to join them using a clear and direct application process to foster collaboration and lifelong learning culture. WE promote career development and advancement making their innovative engineering projects more significant to each involved team member.
+            </p>
+            </div>
+            <div class="career-col">
+            <h3>Field Operations</h3>
+            <p>At Arcivil, a team of people with special skills in land operations makes sure that projects are carried out effectively by helping them manage the site, supervise construction works, and ensure that there is quality. They make efforts to see that they deliver projects successfully without compromising quality in civil engineering.</p>
+        </div>
+    </div>
+</section>
+</section>
+
+
+    <div class="background">
+        <footer>
+            <div class="footer-content">
+                <h3>Arcivil</h3>
+                <p>Arcivil is a forward-thinking engineering firm specializing in innovative solutions for infrastructure and construction projects worldwide</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2024 Arcivil Engineering.</p>
+            </div>
+        </footer>
+        </div>        
+
+<!----------------Non Html--------------------------------------------------->
+<!-----------Java Script Toggle-------------->
+<script>
+
+    var navButtons = document.getElementById("navButtons");
+    function showMenu(){
+        navButtons.style.right ="0";
+    }
+    function hideMenu(){
+        navButtons.style.right ="-260px";
+    }
+</script>
+
+<!----------------Nav Bar Toggle----------------->
+<script>
+    const nav = document.querySelector('nav');
+     window.addEventListener("scroll",function(){
+     if(this.document.documentElement.scrollTop > 20){
+         nav.classList.add('scrolled');
+     }
+     else{
+         nav.classList.remove('scrolled');
+     }
+ });
+ </script>
+
+</body>
+</html>

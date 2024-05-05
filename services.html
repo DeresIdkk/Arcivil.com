@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcivil</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-logo">
+            <a><img src="images/Activity-5-Adriel-L__2_-removebg-preview.png" alt="Arcivil Logo"></a>
+            </div>
+            <div class="nav-btns" id="navButtons">
+               <div class="close"><i class="fa fa-times" onclick="hideMenu()"></i></div>
+                <ul>
+                    <li><a class="arcivil">Arcivil</a></li>
+                    <li><a href="index.html" class="anim">Home</a></li>
+                    <li><a href="about.html" class="anim">About</a></li>
+                    <li><a href="career.html" class="anim">Careers</a></li>
+                    <li><a href="services.html" class="anim">Services</a></li>
+                    <li><a href="contact.html" class="anim">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="open"><i class="fa fa-bars" onclick="showMenu()"></i></div>
+        </nav>
+        <div class="text-box">
+            <h1>Services</h1>
+        </div>
+    </section>
+
+<!-----------------Content-------------------------->
+<section class="Service">
+    <div class="title-text">
+        <h1>Services</h1>
+        <p>Arcivil offers comprehensive civil engineering services</p>
+    </div>
+        <div class="service-list">
+        <div class="first-service">
+            <img src="images/planning and consulting.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Planning And consulting</h3>
+                <p>Consulting services involve civil engineers providing expert advice to clients in both the private and public sectors. They assist with project planning, feasibility studies, and offer guidance on infrastructure development. Essentially, they help shape the vision and strategy for various construction projects.</p>
+            </div>
+        </div>
+        <div class="first-service">
+            <img src="images/design and proposal (1).jpeg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Design And Proposal Preparation</h3>
+                <p>In this phase, civil engineering firms create detailed designs for structures such as bridges, roads, dams, and highways. They consider factors like safety, functionality, and aesthetics. Additionally, they prepare proposals, define project requirements, and estimate costs. Their work lays the foundation for successful construction projects.</p>
+            </div>
+        </div>
+        <div class="first-service">
+            <img src="images/contracting and construction management.jpg">
+            <div class="overlay2"></div>
+            <div class="service-desc">
+                <h3>Contracting And Contruction management</h3>
+                <p>Civil engineers play a crucial role in overseeing construction projects. They manage contracts, coordinate with contractors, and ensure that construction adheres to safety standards and design specifications. Their responsibilities include quality control, cost management, and timely project delivery.</p>
+            </div>   
+        </div>
+        <div class="first-service">
+            <img src="images/surveying and geomatics.jpg">
+            <div class="overlay2"></div>
+            <div class="service-desc">
+                <h3>Surveying And Geomatics</h3>
+                <p>Land surveying and geomatics involve precise measurement and mapping of land. Civil engineers assess topography, boundaries, and existing features. This data is essential for urban planning, property development, and infrastructure design. Surveying ensures accurate positioning and alignment during construction.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<!-----------------Footer--------------------------->
+<div class="background">
+        <footer>
+            <div class="footer-content">
+                <h3>Arcivil</h3>
+                <p>Arcivil is a forward-thinking engineering firm specializing in innovative solutions for infrastructure and construction projects worldwide</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2024 Arcivil Engineering.</p>
+            </div>
+    </footer>
+</div>
+
+<!----------------Non Html--------------------------------------------------->
+<!-----------Java Script Toggle-------------->
+<script>
+
+    var navButtons = document.getElementById("navButtons");
+    function showMenu(){
+        navButtons.style.right ="0";
+    }
+    function hideMenu(){
+        navButtons.style.right ="-260px";
+    }
+</script>
+
+<!----------------Nav Bar Toggle----------------->
+<script>
+    const nav = document.querySelector('nav');
+     window.addEventListener("scroll",function(){
+     if(this.document.documentElement.scrollTop > 20){
+         nav.classList.add('scrolled');
+     }
+     else{
+         nav.classList.remove('scrolled');
+     }
+ });
+ </script>
+
+ </body>
+ </html>
