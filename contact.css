@@ -98,7 +98,7 @@ nav .fa{
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -260px;
+        right: -300px;
         text-align: left;
         align-content: right;
         z-index: 2;
@@ -198,7 +198,7 @@ nav .fa{
     font-weight: 400;
 }
 .contact-col form{
-    height: 20vh;
+    height: 25vh;
 }
 .contact-col input, .contact-col textarea{
     position: relative;
@@ -209,6 +209,41 @@ nav .fa{
     margin-bottom: 17px;
     outline: none;
     border: 1px solid #ccc;
+}
+@media(min-width: 901px){
+    .hero-btn{
+        position: relative;
+        left: 14vw;
+    }
+    .contact-col div h5{
+        font-size: 18px;
+    }
+}
+@media(max-width: 900px){
+    .hero-btn{
+        position: relative;
+        left: 8vw;
+    }
+    .contact-col form{
+        height: 25vh;
+    }
+    .contact-col input, .contact-col textarea{
+        position: relative;
+        left: 42vw;
+    }
+    .contact-col div .fa{
+        font-size: 20px;
+    }
+    .contact-col div p{
+        font-size: 12px;
+        padding: 0;
+    }
+    .contact-col div h5{
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: #000;
+        font-weight: 400;
+    }
 }
 @media(max-width: 700px){
     .hero-btn{
@@ -237,6 +272,45 @@ nav .fa{
     }
     .contact-col form{
         min-height: 60vh;
+    }
+}
+@media(max-width: 300px){
+    .hero-btn{
+        position: relative;
+        top: -1vh;
+        left: 14vw;
+        display: inline-block;
+        text-decoration: none;
+        color: #f77f00;
+        border: 1px solid #f77f00;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    .contact-col input, .contact-col textarea{
+        position: relative;
+        top: -1vh;
+        left: 3vw;
+        width: 80%;
+        padding: 15px;
+        margin-bottom: 17px;
+        outline: none;
+        border: 1px solid #ccc;
+    }
+    .contact-col form{
+        min-height: 60vh;
+    }
+}
+@media(max-width: 400px){
+    .contact-col input, .contact-col textarea{
+        position: relative;
+        left: 5vw;
+    }
+    .hero-btn{
+        position: relative;
+        left: 20vw;
     }
 }
 
